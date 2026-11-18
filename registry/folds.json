@@ -1,0 +1,110 @@
+{
+  "registered": "2026-10-28",
+  "scope": "cancers with >= 3 cohorts in labelled Atlas registry",
+  "n_cancers": 10,
+  "n_cohorts": 42,
+  "n_samples": 455,
+  "rounds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "rule": "round r < n_c holds out sorted_cohorts[r]; r >= n_c keeps all cohorts of that cancer in training; each cohort tested exactly once",
+  "probe": "StandardScaler + LogisticRegression(C=1, max_iter=2000, class_weight=balanced)",
+  "cell_sampling_rng": "default_rng(100000 + 1000*round + seed), shared across all methods",
+  "cancers_dropped": [
+    "Lung",
+    "Melanoma"
+  ],
+  "rounds_summary": [
+    {
+      "round": 0,
+      "held_cohorts": {
+        "Breast": "GSE114725_Breast",
+        "CRC": "GSE132465_CRC",
+        "Esophageal": "GSE160269_Esophageal",
+        "Gastric": "GSE134520_Gastric",
+        "Glioma": "GSE138794_Glioma",
+        "HCC": "GSE125449_HCC",
+        "HNSCC": "GSE103322_HNSCC",
+        "Ovarian": "GSE130000_Ovarian",
+        "PDAC": "GSE154778_PDAC",
+        "RCC": "GSE121636_RCC"
+      },
+      "n_train": 349,
+      "n_test": 106
+    },
+    {
+      "round": 1,
+      "held_cohorts": {
+        "Breast": "GSE161529_Breast",
+        "CRC": "GSE144735_CRC",
+        "Esophageal": "GSE203067_Esophageal",
+        "Gastric": "GSE183904_Gastric",
+        "Glioma": "GSE182109_Glioma",
+        "HCC": "GSE149614_HCC",
+        "HNSCC": "GSE164690_HNSCC",
+        "Ovarian": "GSE184880_Ovarian",
+        "PDAC": "GSE155698_PDAC",
+        "RCC": "GSE289672_RCC"
+      },
+      "n_train": 343,
+      "n_test": 112
+    },
+    {
+      "round": 2,
+      "held_cohorts": {
+        "Breast": "GSE176078_Breast",
+        "CRC": "GSE166555_CRC",
+        "Esophageal": "GSE221561_Esophageal",
+        "Gastric": "GSE234209_Gastric",
+        "Glioma": "GSE324694_Glioma",
+        "HCC": "GSE151530_HCC",
+        "HNSCC": "GSE181919_HNSCC",
+        "Ovarian": "GSE211956_Ovarian",
+        "PDAC": "GSE197177_PDAC",
+        "RCC": "GSE306473_RCC"
+      },
+      "n_train": 342,
+      "n_test": 113
+    },
+    {
+      "round": 3,
+      "held_cohorts": {
+        "CRC": "GSE178318_CRC",
+        "Esophageal": "GSE273127_Esophageal",
+        "Gastric": "GSE270680_Gastric",
+        "Glioma": "GSE326221_Glioma",
+        "HNSCC": "GSE249361_HNSCC",
+        "Ovarian": "GSE217517_Ovarian",
+        "PDAC": "GSE253429_PDAC"
+      },
+      "n_train": 380,
+      "n_test": 75
+    },
+    {
+      "round": 4,
+      "held_cohorts": {
+        "CRC": "GSE200997_CRC",
+        "Gastric": "GSE308231_Gastric",
+        "HNSCC": "GSE301741_HNSCC",
+        "Ovarian": "GSE300897_Ovarian"
+      },
+      "n_train": 416,
+      "n_test": 39
+    },
+    {
+      "round": 5,
+      "held_cohorts": {
+        "Ovarian": "GSE318490_Ovarian"
+      },
+      "n_train": 445,
+      "n_test": 10
+    }
+  ],
+  "registry_sha256": "38a337a5e3bf97e7a0b27037d88585e6caba5804d049a950600398ee1c547d24",
+  "samples_csv_sha256": "fe3731328d3bac235c996f8ff823c40d89b60f11f3d23a8c4a03c6ff0947cd60"
+}

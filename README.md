@@ -128,3 +128,22 @@ results/          demo output (demo_cohort_rows.csv)
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Artefacts & registry
+
+- `registry/folds.json` — the **pre-registered fold registry** (frozen before any
+  benchmark run; 42 cohorts, 6 rotation rounds, every cohort held out exactly
+  once).
+- `artefacts/` — per-run **cohort-level metrics and sample-level predictions**
+  for every experiment family: pre-registered benchmark (results_full,
+  results_screening), comparator (results_scvi, backbone_scgpt), ablations and
+  sweeps (countsweep, dimsat, cells1024/2048/all, bagging), plus
+  benchmark_registry.csv (the sample registry).
+- `analysis/` — paired statistical analysis of the backbone check.
+- `figure_code/` — figure-generation scripts (panels, composites, merged
+  CNS layouts). Paths inside refer to the artefacts above and the local
+  workspace layout.
+
+**Large per-run artefacts** (sample embeddings `.npz`, training histories,
+per-run metrics/predictions for all ~1,600 runs, 925 MB tar.gz) are deposited
+at: `{{GOOGLE_DRIVE_LINK}}` (update pending).

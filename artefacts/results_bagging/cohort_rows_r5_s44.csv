@@ -1,0 +1,11 @@
+method,round,seed,cells,accuracy,balanced_accuracy,macro_f1,cohort,cancer,n_test,cohort_accuracy,cohort_balanced_accuracy,cohort_macro_f1
+bag1_zmean,5,44,2048,1.0,1.0,1.0,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag1_logit,5,44,2048,,,,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag10_zmean,5,44,2048,1.0,1.0,1.0,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag10_logit,5,44,2048,,,,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag25_zmean,5,44,2048,1.0,1.0,1.0,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag25_logit,5,44,2048,,,,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag50_zmean,5,44,2048,1.0,1.0,1.0,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag50_logit,5,44,2048,,,,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag100_zmean,5,44,2048,1.0,1.0,1.0,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
+bag100_logit,5,44,2048,,,,GSE318490_Ovarian,Ovarian,10,1.0,1.0,1.0
