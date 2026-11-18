@@ -119,8 +119,7 @@ results/          demo output (demo_cohort_rows.csv)
   title   = {When do set encoders beat pooling? A pre-registered
              cohort-held-out benchmark for transferable single-cell
              sample representations},
-  author  = {…},
-  journal = {…},
+  author  = {Yan Kong and Hui Lu},
   year    = {2026}
 }
 ```
