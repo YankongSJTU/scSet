@@ -140,10 +140,8 @@ MIT — see [LICENSE](LICENSE).
   sweeps (countsweep, dimsat, cells1024/2048/all, bagging), plus
   benchmark_registry.csv (the sample registry).
 - `analysis/` — paired statistical analysis of the backbone check.
-- `figure_code/` — figure-generation scripts (panels, composites, merged
-  CNS layouts). Paths inside refer to the artefacts above and the local
-  workspace layout.
 
 **Large per-run artefacts** (sample embeddings `.npz`, training histories,
-per-run metrics/predictions for all ~1,600 runs, 925 MB tar.gz) are deposited
-at: `{{GOOGLE_DRIVE_LINK}}` (update pending).
+per-run metrics/predictions for all runs, 925 MB tar.gz) are deposited at:
+[Google Drive — scset_run_artefacts_full.tgz](https://drive.google.com/file/d/1vyQ6UJjs-70eNZ7HBCWnFUUIc-AI66am/view?usp=sharing)
+(md5 `7c11376d2ac30a86bfcf48821a94fe31`, 3,928 entries).
